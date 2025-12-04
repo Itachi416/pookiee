@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise GIF 🎉</title>
+<style>
+body {
+    background: #FFD700;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.gif-clickable {
+    width: 90%;
+    max-width: 400px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.gif-clickable:active {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<h1>🎂 Clique sur le GIF pour continuer 🎉</h1>
+
+<img src="https://i.postimg.cc/SRqXRSMJ/gateau.gif" class="gif-clickable" onclick="window.location='page3.html'">
+
+</body>
+</html>
