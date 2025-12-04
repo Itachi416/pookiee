@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise 🎉</title>
+<style>
+body {
+    background: #800020;
+    color: #fff; /* Texte blanc pour contraste */
+    font-family: Arial;
+    text-align: center;
+}
+
+
+
+.card {
+    margin: 20px auto;
+    width: 90%;
+    background: goldenrod;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(255,255,255,255.255);
+    color: rgb(120, 12, 207); 
+}
+
+.image-gallery img {
+    width: 120px;       /* Largeur fixe */
+    height: 120px;      /* Hauteur fixe */
+    object-fit: cover;  /* Recadre l'image sans la déformer */
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.image-gallery img:active {
+    transform: scale(1.1);
+}
+
+
+.hidden-message {
+    display: none;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.plus {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Joyeux Anniversaire ! 🎉</h1>
+
+<div class="card">
+    <p>Une petite surprise pour toi 💕</p>
+
+    <div class="image-gallery">
+        <img src="https://i.postimg.cc/Dz1nZtKK/unya.jpg" onclick="showMessage('m1')">
+        <img src="https://i.postimg.cc/HnbTJRM4/chi-la-chaton.jpg" onclick="showMessage('m2')">
+        <img src="https://i.postimg.cc/Yq4c0J1N/hellokitty.jpg" onclick="showMessage('m3')">
+    </div>
+
+    <div id="m1" class="hidden-message">✨ Tu illumines la vie des gens.</div>
+    <div id="m2" class="hidden-message">💖 Tu es une personne incroyable.</div>
+    <div id="m3" class="hidden-message">🎁 J’ai encore une surprise pour toi…</div>
+
+    <a class="plus" href="page2.html">➡️ Clique ici Pookie dookie</a>
+</div>
+
+<script>
+function showMessage(id) {
+    document.querySelectorAll('.hidden-message').forEach(m => m.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
